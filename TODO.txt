@@ -1,0 +1,11 @@
+TOOLS:
+ Bricks
+    - 
+
+ Ball:
+ Can fall off the bottom of the screen.
+
+ Player:
+ Lives and gameover state.
+
+ UI:

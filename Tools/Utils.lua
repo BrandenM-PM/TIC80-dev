@@ -1,7 +1,7 @@
 -- Tools
 function Dist(fx,fy,tx,ty)
-	local dx,dy=fx-tx,fy-ty
-	return sqrt(dx*dx+dy*dy)
+  local dx,dy=fx-tx,fy-ty
+  return math.sqrt(dx*dx+dy*dy)
 end
 
 function Mid(a,b,c)
@@ -30,16 +30,11 @@ end
 
 function CheckCollision(x1,y1,w1,h1,x2,y2,w2,h2)
   return x1 < x2+w2 and
-         x2 < x1+w1 and
-         y1 < y2+h2 and
-         y2 < y1+h1
+  x2 < x1+w1 and
+  y1 < y2+h2 and
+  y2 < y1+h1
 end
 
 function CheckPointCollision(x1,y1,x2,y2,r)
   return Dist(x1,y1,x2,y2)<r
-end
-
-
-function Lerp(a,b,t)
-  return a+(b-a)*t
 end

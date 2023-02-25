@@ -1,6 +1,6 @@
 -- Player script
 function P_Init(_x,_y,_w,_h)
-  return PLAYER = {
+  local p= {
     x=_x,
     y=_y,
     vx=0,
@@ -9,9 +9,10 @@ function P_Init(_x,_y,_w,_h)
     w=_w,
     h=_h,
     Init=P_Init,
-    Upd=P_Update,
-    Drw=P_Draw
+    Update=P_Update,
+    Draw=P_Draw
   }
+  return p
 end
 
 function P_Update()
